@@ -1,0 +1,15 @@
+{
+  "name": "app.js",
+  "version": "0.0.1",
+  "description": "chat app",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.2.0"
+  },
+  "main": "npm install express --save",
+  "scripts": {
+    "test": "npm install express"
+  },
+  "author": "",
+  "license": "ISC"
+}
