@@ -32,4 +32,16 @@ $(document).ready(function()
   {
     $("#messages").append("<strong>" + data.name + ":</strong> " + data.msg + "<br>");
   });
+
+  socket.on( 'names', function(data)
+  {
+    var names = [];
+    names = data;
+    $("#members").empty();
+    var length = names.length;
+    for(var i = 0; i < length; i++)
+    {
+      $("#members").append("<p>" + names[i] + "</p>");
+    }
+  });
 });
