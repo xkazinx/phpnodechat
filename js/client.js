@@ -12,22 +12,24 @@ $(document).ready(function()
 
   $("#messageForm").submit( function(event) {
     event.preventDefault();
-  	var msg = $( "#messageInput" ).val();
-    if (msg.length == 0)
+  	var msgVal = $( "#messageInput" ).val();
+    if (msgVal.length == 0)
   		return false;
 
-    $("#messages").append("<strong>Kazin:</strong> asdasdasd");
+    socket.emit('message', {msg: msgVal});
     $("#messageInput").val("");
 
     return false;
   });
 
-
   socket.on( 'req_name', function()
   {
-    alert("req_name");
     var nameVal = $("#messageName").val();
     socket.emit( 'not_name', { name: nameVal } );
   });
 
+  socket.on( 'message', function(data)
+  {
+    $("#messages").append("<strong>" + data.name + ":</strong> " + data.msg + "<br>");
+  });
 });

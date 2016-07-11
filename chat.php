@@ -14,43 +14,8 @@
       <div class="col-xs-10">
       <div class="panel panel-primary">
         <div class="panel-heading">Chat</div>
-        <div class="panel-body" id="messages" style="height: 80%; max-height: 80%;overflow-y: scroll;">
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
-          <strong>Kazin:</strong>Message amigo <br>
+        <div class="panel-body" id="messages" style="height: 80%; max-height: 80%;overflow-y: scroll;overflow-x: none;">
+
         </div>
       </div>
     </div>
