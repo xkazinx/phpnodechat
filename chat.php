@@ -1,3 +1,26 @@
+<?
+  header('cache:private');
+  session_start();
+
+  $user = "";
+  if ($_POST)
+  {
+    if (isset($_POST['user']))
+    {
+      $user = $_POST['user'];
+    }
+  }
+
+  if (strlen($user) > 0)
+    $_SESSION['user'] = $user;
+
+  if (!isset($_SESSION['user']))
+  {
+      header('location:index.php');
+      return;
+  }
+?>
+
 <html>
   <head>
     <title>Chat</title>
@@ -39,7 +62,7 @@
     <div class="navbar-inner" id="test">
       <form class="form-inline" id="messageForm">
       <input type="text" id="messageInput" autocomplete="off" style="width:85%;">
-      <input type="hidden" id="messageName" value="test" autocomplete="off" style="width:85%;">
+      <input type="hidden" id="messageName" value="<? echo $_SESSION['user']; ?>">
       <input type="submit" id="messageSubmit" class="btn">
 			<a href="logout.php" class="btn">Log Out</a>
     </form>

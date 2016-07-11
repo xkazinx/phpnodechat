@@ -15,7 +15,7 @@
     <div class="panel panel-primary">
       <div class="panel-heading">Authentication</div>
       <div class="panel-body">
-        <form action="connect.php" method="POST">
+        <form action="chat.php" method="POST">
           <div class="input-append">
             <input type="text" name="user" placeholder="Username" />
             <input type="submit" value="Ok" class="btn">

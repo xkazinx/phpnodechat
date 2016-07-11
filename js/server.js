@@ -30,12 +30,15 @@ io.sockets.on( 'connection', function( client )
 
     if (found == true)
     {
-      console.log("Client name [" + data.name + "] already exists!");
-      return;
+      console.log("Client name [" + data.name + "] already exists; will rename.");
     }
 
     client.name = data.name;
-    console.log("Client authenticated: " + data.name);
+    if (found)
+    {
+      client.name = data.name + "[" + clients.length + "]";
+    }
+    console.log("Client authenticated: " + client.name);
   });
 
 	client.on( 'message', function( data )
